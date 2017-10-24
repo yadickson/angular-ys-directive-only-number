@@ -69,7 +69,7 @@
         var event = {
           preventDefault: sinon.spy(),
           key: 'Other'
-        }
+        };
 
         expect(ysOnlyNumberManager.validateKeyEvent(event)).to.be.false;
         assert(event.preventDefault.called);

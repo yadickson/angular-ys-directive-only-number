@@ -5,44 +5,51 @@
 
     beforeEach(angular.mock.module('angularYS.DirectiveOnlyNumber'));
 
+    var element;
+    var mockYSOnlyNumberManager;
+
     // instantiate service
-/*    var mockYSServiceKeyboard;
     beforeEach(function() {
 
-      mockYSServiceKeyboard = {
-        isOnlyNumber: function(e) {
-          return e === 'N';
+      mockYSOnlyNumberManager = {
+        formatNumber: function(e) {
+          return e;
         },
-        isCtrlKeys: function(e) {
-          return e === 'K';
+        validateKeyEvent: function(e) {
+          return e;
         }
       };
 
       angular.mock.module(function($provide) {
-        $provide.value('ysServiceKeyboard', mockYSServiceKeyboard);
+        $provide.value('ysOnlyNumberManager', mockYSOnlyNumberManager);
       });
 
     });
 
-    describe('Check method formatNumber', function() {
+    it('Check only-number keyup event', inject(function($rootScope, $compile) {
+      element = angular.element('<input type="text" ng-model="numericValue" ys-only-number></input>');
+      element = $compile(element)($rootScope.$new());
+      var event = angular.element.Event("keyup");
+      event.key = '1';
+      element.trigger(event);
+      expect(element.val()).to.empty;
+    }));
 
-      it('Check input null', inject(function(ysOnlyNumberManager) {
-        expect(ysOnlyNumberManager.formatNumber(null)).to.equal('');
-      }));
+    it('Check only-number paste event', inject(function($rootScope, $compile) {
+      element = angular.element('<input type="text" ng-model="numericValue" ys-only-number></input>');
+      element = $compile(element)($rootScope.$new());
+      var event = angular.element.Event("paste");
+      element.trigger(event);
+      expect(element.val()).to.empty;
+    }));
 
-      it('Check input numeric', inject(function(ysServiceKeyboard) {
-        expect(ysOnlyNumberManager.formatNumber('123456789')).to.equal('123456789');
-      }));
+    it('Check only-number propertychange event', inject(function($rootScope, $compile) {
+      element = angular.element('<input type="text" ng-model="numericValue" ys-only-number></input><p>{{numericValue}}</p>');
+      element = $compile(element)($rootScope.$new());
+      var event = angular.element.Event("propertychange");
+      element.trigger(event);
+      expect(element.val()).to.empty;
+    }));
 
-      it('Check numeric and text', inject(function(ysServiceKeyboard) {
-        expect(ysOnlyNumberManager.formatNumber('123abc456')).to.equal('123456');
-      }));
-
-      it('Check decimal number', inject(function(ysServiceKeyboard) {
-        expect(ysOnlyNumberManager.formatNumber('123.456')).to.equal('123456');
-      }));
-
-    });
-*/
   });
 })();
