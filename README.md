@@ -2,6 +2,7 @@
 
 [![TravisCI Status][travis-image]][travis-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
+[![GitHub version][github-image]][github-url]
 
 Angular directive only number for html5 input text
 
@@ -65,9 +66,10 @@ $ npm run compile
 $ npm test
 ```
 
-### Register (previusly make a git tag version)
+### Register
 
 ```
+$ bower login
 $ bower register angular-ys-directive-only-number https://github.com/yadickson/angular-ys-directive-only-number.git
 ```
 
@@ -76,3 +78,6 @@ $ bower register angular-ys-directive-only-number https://github.com/yadickson/a
 
 [coveralls-image]: https://coveralls.io/repos/github/yadickson/angular-ys-directive-only-number/badge.svg?branch=master
 [coveralls-url]: https://coveralls.io/github/yadickson/angular-ys-directive-only-number
+
+[github-image]: https://badge.fury.io/gh/yadickson%2Fangular-ys-directive-only-number.svg
+[github-url]: https://badge.fury.io/gh/yadickson%2Fangular-ys-directive-only-number
