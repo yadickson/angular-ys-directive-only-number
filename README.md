@@ -9,68 +9,66 @@ Angular directive only number for html5 input text
 ### Prepare
 
 ```
-$ bower init
-$ npm init
+$ yarn init
 ```
 
-### Install dependencies
+### Add dependencies
 
 ```
-$ bower install --save jquery@~1.12.0
-$ bower install --save angular@~1.3.20
-$ bower install --save angular-ys-service-keyboard@~1.0.0
+$ yarn add jquery@~1.12.0
+$ yarn add angular@~1.3.20
+$ yarn add angular-ys-service-keyboard@~1.0.0
 ```
 
-### Install develop dependencies
+### Add develop dependencies
 
 ```
-$ bower install --save-dev angular-mocks@~1.3.20
+$ yarn add --dev angular-mocks@~1.3.20
 ```
 
-### Install compiler dependencies
+### Add compiler dependencies
 
 ```
-$ npm install --save-dev babel-cli babel-preset-env
-$ npm install --save-dev babel-preset-babili
+$ yarn add --dev mkdirp rimraf
+$ yarn add --dev babel-cli babel-preset-env
+$ yarn add --dev babel-preset-babili
 ```
 
-### Install unit test/coverage tools
+### Add unit test/coverage tools
 
 ```
-$ npm install --save-dev bower
-$ npm install --save-dev karma
-$ npm install --save-dev chai karma-chai
-$ npm install --save-dev mocha karma-mocha
-$ npm install --save-dev sinon karma-sinon
-$ npm install --save-dev karma-bro karma-phantomjs-launcher
-$ npm install --save-dev karma-coverage karma-istanbul
-$ npm install --save-dev karma-mocha-reporter karma-junit-reporter
-$ npm install --save-dev coveralls
+$ yarn add --dev karma
+$ yarn add --dev chai karma-chai
+$ yarn add --dev mocha karma-mocha
+$ yarn add --dev sinon karma-sinon
+$ yarn add --dev karma-bro karma-phantomjs-launcher
+$ yarn add --dev karma-coverage karma-istanbul
+$ yarn add --dev karma-mocha-reporter karma-junit-reporter
+$ yarn add --dev coveralls
 ```
 
 ### Prepare application
 
 ```
-$ bower install && npm install
+$ yarn install
 ```
 
 ### Compiler application
 
 ```
-$ npm run compile
+$ yarn run compile
 ```
 
 ### Test application
 
 ```
-$ npm test
+$ yarn test
 ```
 
 ### Register
 
 ```
-$ bower login
-$ bower register angular-ys-directive-only-number https://github.com/yadickson/angular-ys-directive-only-number.git
+$ yarn publish
 ```
 
 [travis-image]: https://img.shields.io/travis/yadickson/angular-ys-directive-only-number.svg?label=travisci
