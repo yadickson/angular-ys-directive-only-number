@@ -1,8 +1,8 @@
-# angular-ys-directive-only-number
+# angular-ys-directive-only-number [![GitHub version][github-image]][github-url]
 
-[![TravisCI Status][travis-image]][travis-url]
-[![Coverage Status][coveralls-image]][coveralls-url]
-[![GitHub version][github-image]][github-url]
+### Travis-CI [![TravisCI Status][travis-image]][travis-url]
+### Coverage [![Coverage Status][coveralls-image]][coveralls-url]
+
 
 Angular directive only number for html5 input text
 
@@ -71,11 +71,11 @@ $ yarn test
 $ yarn publish
 ```
 
-[travis-image]: https://img.shields.io/travis/yadickson/angular-ys-directive-only-number.svg?label=travisci
+[travis-image]: https://travis-ci.org/yadickson/angular-ys-directive-only-number.png
 [travis-url]: https://travis-ci.org/yadickson/angular-ys-directive-only-number
 
-[coveralls-image]: https://coveralls.io/repos/github/yadickson/angular-ys-directive-only-number/badge.svg?branch=master
+[coveralls-image]: https://coveralls.io/repos/github/yadickson/angular-ys-directive-only-number/badge.png
 [coveralls-url]: https://coveralls.io/github/yadickson/angular-ys-directive-only-number
 
-[github-image]: https://badge.fury.io/gh/yadickson%2Fangular-ys-directive-only-number.svg
+[github-image]: https://badge.fury.io/gh/yadickson%2Fangular-ys-directive-only-number.png
 [github-url]: https://badge.fury.io/gh/yadickson%2Fangular-ys-directive-only-number
