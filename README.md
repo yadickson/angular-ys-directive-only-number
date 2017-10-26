@@ -10,6 +10,7 @@ Angular directive only number for html5 input text
 
 ```
 $ yarn init
+$ bower init
 ```
 
 ### Add dependencies
