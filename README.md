@@ -11,13 +11,13 @@ Angular directive only number for html5 input text
 ## Installation
 To install this module, you need to run the following command
 
-```Javascript
+```
 $ npm install --save angular-ys-directive-only-number
 ```
 
 ## Dependency
 
-```Javascript
+```
 $ npm install --save jquery@~1.12.0
 $ npm install --save angular@~1.3.20
 $ npm install --save angular-ys-factory-keyboard@~1.0.0
