@@ -1,6 +1,6 @@
 {
   "name": "angular-ys-directive-only-number",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Angular directive only number for html5 input text ",
   "main": "dist/angular-ys-directive-only-number.js",
   "dependencies": {
