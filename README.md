@@ -7,69 +7,42 @@
 
 Angular directive only number for html5 input text
 
-### Prepare
 
-```
-$ yarn init
-```
+## Installation
+To install this module, you need to run the following command
 
-### Add dependencies
-
-```
-$ yarn add jquery@~1.12.0
-$ yarn add angular@~1.3.20
-$ yarn add angular-ys-service-keyboard@~1.0.0
+```Javascript
+$ npm install --save angular-ys-directive-only-number
 ```
 
-### Add develop dependencies
+## Dependency
 
-```
-$ yarn add --dev angular-mocks@~1.3.20
-```
-
-### Add compiler dependencies
-
-```
-$ yarn add --dev mkdirp rimraf
-$ yarn add --dev babel-cli babel-preset-env
-$ yarn add --dev babel-preset-babili
+```Javascript
+$ npm install --save jquery@~1.12.0
+$ npm install --save angular@~1.3.20
+$ npm install --save angular-ys-factory-keyboard@~1.0.0
+$ npm install --save angular-ys-service-keyboard@~1.0.0
 ```
 
-### Add unit test/coverage tools
+## Include Javascripts in index.html
 
-```
-$ yarn add --dev karma
-$ yarn add --dev chai karma-chai
-$ yarn add --dev mocha karma-mocha
-$ yarn add --dev sinon karma-sinon
-$ yarn add --dev karma-bro karma-phantomjs-launcher
-$ yarn add --dev karma-coverage karma-istanbul
-$ yarn add --dev karma-mocha-reporter karma-junit-reporter
-$ yarn add --dev coveralls
+```html
+<script src="node_modules/angular-ys-factory-keyboard/dist/angular-ys-factory-keyboard.js"></script>
+<script src="node_modules/angular-ys-service-keyboard/dist/angular-ys-service-keyboard.js"></script>
+<script src="node_modules/angular-ys-directive-only-number/dist/angular-ys-directive-only-number.js"></script>
 ```
 
-### Prepare application
+## Add directive in app.js or main.js
 
-```
-$ yarn install
-```
-
-### Compiler application
-
-```
-$ yarn run compile
+```Javascript
+angular.module('app', ['angularYS.DirectiveOnlyNumber']);
 ```
 
-### Test application
+## Example
 
-```
-$ yarn test
-```
-
-### Register
-
-```
-$ yarn publish
+```html
+<input type="text" ng-model="numericValue" ys-only-number></input>
+<p>{{numericValue}}</p>
 ```
 
 [travis-image]: https://travis-ci.org/yadickson/angular-ys-directive-only-number.svg
