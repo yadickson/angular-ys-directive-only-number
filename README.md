@@ -2,6 +2,9 @@
 
 [![TravisCI Status][travis-image]][travis-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
+[![dependencies][dependencies-image]][dependencies-url]
+[![dev-dependencies][dev-dependencies-image]][dev-dependencies-url]
+[![Known Vulnerabilities][vulnerabilities-image]][vulnerabilities-url]
 [![npm version][npm-image]][npm-url]
 
 
@@ -18,8 +21,8 @@ $ npm install --save angular-ys-directive-only-number
 ## Dependency
 
 ```
-$ npm install --save jquery@~1.12.0
-$ npm install --save angular@~1.3.20
+$ npm install --save jquery@~3.0.0
+$ npm install --save angular@~1.6.1
 $ npm install --save angular-ys-factory-keyboard@~1.0.0
 $ npm install --save angular-ys-service-keyboard@~1.0.0
 ```
@@ -50,6 +53,15 @@ angular.module('app', ['angularYS.DirectiveOnlyNumber']);
 
 [coveralls-image]: https://coveralls.io/repos/github/yadickson/angular-ys-directive-only-number/badge.svg
 [coveralls-url]: https://coveralls.io/github/yadickson/angular-ys-directive-only-number
+
+[dependencies-image]: https://david-dm.org/yadickson/angular-ys-directive-only-number/status.svg
+[dependencies-url]: https://david-dm.org/yadickson/angular-ys-directive-only-number?view=list
+
+[dev-dependencies-image]: https://david-dm.org/yadickson/angular-ys-directive-only-number/dev-status.svg
+[dev-dependencies-url]: https://david-dm.org/yadickson/angular-ys-directive-only-number?type=dev&view=list
+
+[vulnerabilities-image]: https://snyk.io/package/npm/angular-ys-directive-only-number/badge.svg
+[vulnerabilities-url]: https://snyk.io/package/npm/angular-ys-directive-only-number
 
 [npm-image]: https://badge.fury.io/js/angular-ys-directive-only-number.svg
 [npm-url]: https://badge.fury.io/js/angular-ys-directive-only-number
