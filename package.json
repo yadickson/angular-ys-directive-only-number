@@ -1,12 +1,12 @@
 {
     "name": "angular-ys-directive-only-number",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "Angular directive only number for html5 input text ",
     "main": "dist/angular-ys-directive-only-number.js",
     "dependencies": {
         "angular": "~1.6.1",
         "angular-ys-service-keyboard": "~1.0.0",
-        "jquery": "~3.0.0"
+        "jquery": "~3.2.0"
     },
     "devDependencies": {
         "angular-mocks": "~1.6.1",
